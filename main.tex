@@ -1,0 +1,176 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\title{Report for Homework 4}
+
+\author{Parth Jayantilal Jain}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+\label{sec:introduction}
+I have implemented Gentics algoirthm using pyevolve library, greedy algorithm and A-star algorithm to solve Travelling Sales Person (TSP) problem. 
+
+\section{System configuration}
+\label{sec:systemconfiguration}
+All the programs were implemented and executed on the system with following configuration:
+\dots or bullet points \dots
+\begin{itemize}
+\item HP Pavillion laptop
+\item 8gb ram
+\item Dual boot windows and ubuntu(linux)
+\item 1 TB HDD
+\item The program was run on linux and not in 
+windows
+\item You also need to install pyevolve library
+\end{itemize}
+
+\section{Results and interpretation}
+Based on the results it can be deduced that the tour length is minimum in case of greedy for the benchmarks between GA and Greedy. Also you get the minimum value between GA, Greedy and Astar, from AStar.
+\begin{table}
+\centering
+\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|}
+
+\hline
+BENCHMARKS & TOUR LENGTH FOR GA& EXECUTION TIME FOR GA(s)\\
+\hline
+d2103.tsp&2697923.26&492.245672\\
+\hline
+d1655.tsp&1787998.79&368.370110\\
+\hline
+fl1577.tsp&1090187.67&307.129964\\
+\hline
+att48.tsp&42600.07&11.175342\\
+\hline
+u1060.tsp&4976285.11&208.244865\\
+\hline
+u1817.tsp&1706349.69&406.600839\\
+\hline
+pr1002.tsp&4767184.18&209.593185\\
+\hline
+pcb3038.tsp&4646274.03&893.755261\\
+\hline
+u2319.tsp&4988270.90&589.186240\\
+\hline
+d1291.tsp&1363213.83&243.429005\\
+\hline
+vm1084.tsp&6413378.08&209.417412\\
+\hline
+rl1889.tsp&12055670.69&405.347429\\
+\hline
+u2152.tsp&2066133.61&512.525024\\
+\hline
+fnl4461.tsp&7317939.37&2078.84637\\
+\hline
+rl1304.tsp&7315459.97&262.509838\\
+\hline
+fl1400.tsp&1247698.51&269.254390\\
+\hline
+rl1323.tsp&7702362.39&260.044473\\
+\hline
+nrw1379.tsp&1111868.62&264.955883\\
+\hline
+pcb1173.tsp&1094419.01&223.922412\\
+\hline
+u1432.tsp&3131928.72&287.593116\\
+\hline
+pr2392.tsp&12787236.45&600.687142\\
+\hline
+vm1748.tsp&12083215.07&350.118080\\
+\hline
+fl3795.tsp&3081807.67&1430.066373\\
+\hline
+rl5915.tsp&38322326.79&4204.185836\\
+\hline
+rl5934.tsp&37876086.29&6141.941117\\
+\hline
+\end{tabular}
+\caption{Results for TSP using GA} \label{tab:GA}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|}
+
+\hline
+BENCHMARKS & TOUR LENGTH & EXECUTION TIME(in seconds)\\
+\hline
+fl1577.tsp&28200.05&16.442822\\
+\hline
+att48.tsp&40526.42&0.454247\\
+\hline
+u1060.tsp&281976.07&5.103730\\
+\hline
+rl5934.tsp&695865.13&1425.235365\\
+\hline
+u1817.tsp&70147.67&831.724561\\
+\hline
+pr1002.tsp&325112.79&5.144432\\
+\hline
+pcb3038.tsp&176330.74&143.530396\\
+\hline
+u2319.tsp&286997.35&62.116791\\
+\hline
+d1291.tsp&60264.84&10.879561\\
+\hline
+vm1084.tsp&300938.52&7.260818\\
+\hline
+rl1889.tsp&394296.74&32.929133\\
+\hline
+d2103.tsp&87803.27&34.221999\\
+\hline
+d1655.tsp&74592.38&17.196115\\
+\hline
+fl1400.tsp&27201.25&12.669916\\
+\hline
+fnl4461.tsp&228417.91&348.297943\\
+\hline
+rl1304.tsp&324489.06&18.735194\\
+\hline
+rl1323.tsp&343251.62&11.829125\\
+\hline
+nrw1379.tsp&69794.61&12.352266\\
+\hline
+pcb1173.tsp&73326.7&7.832124\\
+\hline
+pr2392.tsp&464801.45&69.862949\\
+\hline
+u2152.tsp&77780.53&37.537427\\
+\hline
+u1432.tsp&193337.91&12.238017\\
+\hline
+vm1748.tsp&422017.51&24.755502\\
+\hline
+fl3795.tsp&34779.26&223.005743\\
+\hline
+rl5915.tsp&694765.36&978.694715\\
+\hline
+\end{tabular}
+\caption{Results for TSP using Greedy Algorithm} \label{tab:GREEDY}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|}
+\hline
+BENCHMARKS & TOUR LENGTH & EXECUTION TIME(in seconds)\\
+\hline
+val2.tsp&19520.3&1.385401\\
+\hline
+val3.tsp&12180.38&2.588935\\
+\hline
+val1.tsp&20.0&0.02474\\
+\hline
+\end{tabular}
+\caption{Results for TSP using A-Star Algorithm} \label{tab:ASTAR}
+\end{table}
+
+\end{document}

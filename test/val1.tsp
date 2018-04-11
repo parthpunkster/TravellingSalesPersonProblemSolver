@@ -1,0 +1,13 @@
+NAME : val1
+COMMENT : 48 capitals of the US (Padberg/Rinaldi)
+TYPE : TSP
+DIMENSION : 48
+EDGE_WEIGHT_TYPE : EUC_2D
+NODE_COORD_SECTION
+1 4 5
+2 4 8
+3 4 10
+4 4 4
+5 4 2
+6 4 11
+7 4 1
